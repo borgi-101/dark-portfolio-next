@@ -2,7 +2,6 @@ import Link from "next/link";
 import { useContext, useState } from "react";
 import ThemeContext from "../context/ThemeContext";
 import MenuResponsive from "./MenuResponsive";
-import Menu from "./Menu";
 
 const Header = () => {
     const commonStyles = "flex justify-between py-7 items-center transition-all duration-700  sticky top-0";
@@ -12,8 +11,8 @@ const Header = () => {
     const spanStyles = `h-1 duration-500 origin-left w-full ${darkmode ? "bg-white" : "bg-gray-800"}`
     return (
         <header className={`${darkmode ?
-            `bg-gray-800 text-pink-50 sticky top-0 bg-opacity-50 backdrop-blur-md ` :
-            `bg-pink-50 text-gray-800 sticky top-0 bg-opacity-50`
+            `duration-500 bg-gray-800 text-pink-50 fixed top-0 left-0 right-0 bg-opacity-50 backdrop-blur-md ` :
+            `duration-500 bg-pink-50 text-gray-800 fixed top-0 left-0 right-0 bg-opacity-50`
             }`
         }>
             <div className={commonStyles + " max-w-6xl mx-auto"}>
@@ -29,7 +28,7 @@ const Header = () => {
                     >
                         Button
                     </button>
-                    <MenuResponsive toggle={toggle} />
+                    <MenuResponsive toggle={toggle} setToggle={setToggle} />
                     <button
                         onClick={() => setToggle(!toggle)}
                         className="flex flex-col justify-between w-10 h-8 m-3 md:hidden"
