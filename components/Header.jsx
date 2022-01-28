@@ -13,7 +13,7 @@ const Header = () => {
 	return (
 
 
-		<header className={`${darkmode ?
+		<header className={`z-50 ${darkmode ?
 			`duration-500 bg-gray-800 text-pink-50
             fixed top-0 left-0 right-0 bg-opacity-50 backdrop-blur-sm ` :
 			`duration-500 bg-pink-50 text-gray-800 
