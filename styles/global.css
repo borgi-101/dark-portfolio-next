@@ -5,3 +5,23 @@
 body{
     overflow-x: hidden;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+.ProjectCardContainer{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media(max-width: 1050px){
+  .ProjectCardContainer{
+    grid-template-columns: 1fr 1fr;
+  }  
+}
+
+
+@media(max-width: 650px){
+  .ProjectCardContainer{
+    grid-template-columns: 1fr;
+  }  
+}

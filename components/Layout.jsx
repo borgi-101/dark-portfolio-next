@@ -7,7 +7,7 @@ const Layout = ({children}) =>{
     const [darkmode, setDarkmode] = useState(false);
     return(
         <ThemeContext.Provider value={{darkmode, setDarkmode}}>
-            <div className={`duration-500 ${darkmode ? "bg-gray-800" : "bg-white"}`}>
+            <div className={`scroll-smooth duration-500 ${darkmode ? "bg-gray-800" : "bg-white"}`}>
                 <Header />
                 {children}
             </div>
