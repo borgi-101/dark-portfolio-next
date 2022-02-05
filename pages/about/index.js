@@ -20,7 +20,7 @@ const About = () => {
           <div className='flex flex-col align-items-center'>
             <a href="#bottom">
               <h1 className={`max-w-6xl md:text-4xl  ${darkmode ? 'text-white' : 'text-black'}`}>
-                I'm 18, I'm a tech student, and lover at linux, In my free time I drink cofee, and read about tech. I love run, and I try do it every day.
+                I'm 18, I'm a tech student, and lover at linux and macOS, In my free time I drink coffee, and read about tech. I love run, and I try do it every day.
               </h1>
             </a>
             <a href="#bottom" className={`w-10 mx-auto ${darkmode ? 'text-blue-500' : 'text-purple-700'}`}>

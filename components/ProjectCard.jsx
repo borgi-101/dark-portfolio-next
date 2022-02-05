@@ -3,12 +3,12 @@ import {AiFillGithub , AiOutlineSelect} from "react-icons/ai";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-const ProjectCard = ({title, imageRoute, technologies, darkmode}) =>{
+const ProjectCard = ({title, imageRoute, technologies, darkmode, github, live, projectDescription}) =>{
   useEffect(()=>{
     Aos.init({duration: 500})
   }, [])
   
-  const linkButtonStyles = `w-10 h-10 mx-10 ${darkmode ? 
+  const linkButtonStyles = `w-7 h-7 mx-2 ${darkmode ? 
     'text-white hover:text-blue-400' : 
     'text-gray-800 hover:text-purple-700'}
     `
@@ -19,28 +19,39 @@ const ProjectCard = ({title, imageRoute, technologies, darkmode}) =>{
       <figure>
         <img className="w-full mx-auto" src={imageRoute} alt="PROJECT IMAGE" />
       </figure>
-      <h3 className={` ${darkmode ? 'text-white' : 'text-gray-800'}`}>{title}</h3>
-      <div className={`rounded-lg px-2 w-auto font-bold h-6 text-sm text-center text-white 
+      <h3 className={`mt-4 ${darkmode ? 'text-white' : 'text-gray-800'}`}>{title}</h3>
+      
+      <div
+        className="flex"
+      >{
+      technologies.map(technology=>(
+        <div className={`mx-1 rounded-lg px-2 w-auto h-4 text-xs text-center text-white  font-medium
         ${darkmode ? 
-          'bg-blue-400' : 
-          'bg-purple-700'
+          'bg-blue-400 mt-2' : 
+          'bg-purple-700 mt-2'
         
       }`}>
-        {technologies}
+        {technology}
+      </div>))
+      }
       </div>
 
       <div className={`
         duration-500
         flex
-        justify-between
-        w-auto>
+        justify-around
         mt-4
         
       `}>
-        <a href="#">
-          <AiFillGithub className={linkButtonStyles}/>
-        </a>
-        <a href="#">
+        {
+          github ? 
+          <a href={github} className="m-0">
+            <AiFillGithub className={linkButtonStyles}/>
+          </a>
+            :
+            ""
+        } 
+        <a href={live} className="m-0">
           <AiOutlineSelect className={linkButtonStyles}/>
         </a>
       </div>
