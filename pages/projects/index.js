@@ -20,16 +20,16 @@ const About = () => {
     {
       title: "Rick and Morty Darkmode",
       imageRoute: "https://franborgiani.com/projects-images/dark-mode-rick-and-morty.png",
-      github: "https://github.com/borgi-101/react-rick-morty",
-      live: "https://borgi-101.github.io/react-rick-morty/",
+      github: "https://github.com/francoborgiani/react-rick-morty",
+      live: "https://francoborgiani.github.io/react-rick-morty/",
       technologies: ["React", "SASS", "JavaScript", "Git"],
       description: ""
     },
     {
       title: "Tic Tac Toe App",
-      github: "https://github.com/borgi-101/tic-tac-toe-vite-react",
+      github: "https://github.com/francoborgiani/tic-tac-toe-vite-react",
       imageRoute: "https://franborgiani.com/projects-images/tic-tac-toe-react.png",
-      live: "https://borgi-101.github.io/tic-tac-toe-vite-react/",
+      live: "https://francoborgiani.github.io/tic-tac-toe-vite-react/",
       technologies: ["React", "JavaScript", "Git", "Vite"],
       description: ""
     },
@@ -37,14 +37,14 @@ const About = () => {
       title: "100tifico Pagination App",
       technologies: "React, SASS, JavaScript, Git",
       imageRoute: "https://franborgiani.com/projects-images/100tifico-pagination-characters.png",
-      live: "https://borgi-101.github.io/react-100tifico/",
+      live: "https://francoborgiani.github.io/react-100tifico/",
       technologies: ["React", "SASS", "JavaScript", "Git"],
-      github: "https://github.com/borgi-101/react-100tifico",
+      github: "https://github.com/francoborgiani/react-100tifico",
       description: ""
     },
     {
       title: "Personal Portfolio",
-      github: "https://github.com/borgi-101/dark-portfolio-next",
+      github: "https://github.com/francoborgiani/dark-portfolio-next",
       technologies: ["NextJS", "React", "TailwindCSS", "Git"],
       imageRoute: "https://franborgiani.com/projects-images/next-portfolio.png",
       live: "https://franborgiani.com/",

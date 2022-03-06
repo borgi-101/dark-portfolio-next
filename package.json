@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/borgi-101/dark-portfolio-next.git"
+    "url": "git+https://github.com/francoborgiani/dark-portfolio-next.git"
   },
   "keywords": [
     "Next",
@@ -21,9 +21,9 @@
   "author": "Franco Borgiani <contact@franborgiani.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/borgi-101/dark-portfolio-next/issues"
+    "url": "https://github.com/francoborgiani/dark-portfolio-next/issues"
   },
-  "homepage": "https://github.com/borgi-101/dark-portfolio-next#readme",
+  "homepage": "https://github.com/francoborgiani/dark-portfolio-next#readme",
   "devDependencies": {
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.2",
