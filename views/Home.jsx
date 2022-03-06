@@ -15,7 +15,7 @@ const Home = () => {
         <title>Home | Franco Borgiani Fullstack Developer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="index, follow" />
-        <link rel="icon" type="favicon" href='/favicon-32x32.png' sizes="16x16"></link>
+        <link rel="icon" type="favicon" href='https://franborgiani.com/favicon-32x32.png' sizes="16x16"></link>
 
       </Head>
       <Section>

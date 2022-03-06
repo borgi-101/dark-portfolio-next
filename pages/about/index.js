@@ -21,7 +21,7 @@ const About = () => {
         <link
           rel="icon"
           type="favicon"
-          href="/favicon-32x32.png"
+          href="https://franborgiani.com/favicon-32x32.png"
           sizes="16x16"
         ></link>
       </Head>
