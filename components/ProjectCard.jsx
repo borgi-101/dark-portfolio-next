@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import {AiFillGithub , AiOutlineSelect} from "react-icons/ai";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Image from "next/image";
+import imagen from '../public/correagorondona.png'
 
 const ProjectCard = ({title, imageRoute, technologies, darkmode, github, live, projectDescription}) =>{
   useEffect(()=>{
@@ -17,7 +19,7 @@ const ProjectCard = ({title, imageRoute, technologies, darkmode, github, live, p
     <div data-aos="fade-up" className={`flex flex-col items-center w-full px-3 py-6 mb-3 
     text-center rounded-lg ${darkmode ? 'bg-gray-900' : 'bg-gray-200'}`}>
       <figure>
-        <img className="w-full mx-auto" src={imageRoute} alt="PROJECT IMAGE" />
+       <img className="w-full mx-auto object-cover" src={imageRoute} alt={title} />
       </figure>
       <h3 className={`mt-4 ${darkmode ? 'text-white' : 'text-gray-800'}`}>{title}</h3>
       
@@ -29,7 +31,6 @@ const ProjectCard = ({title, imageRoute, technologies, darkmode, github, live, p
         ${darkmode ? 
           'bg-blue-400 mt-2' : 
           'bg-purple-700 mt-2'
-        
       }`}>
         {technology}
       </div>))

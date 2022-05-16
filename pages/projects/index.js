@@ -7,19 +7,19 @@ import Footer from "../../components/Footer";
 import ProjectCard from "../../components/ProjectCard";
 import ProjectCardContainer from "../../components/ProjectCardContainer";
 
-const About = () => {
+const Projects = () => {
   const projectsInfo = [
     {
       title: "Correa Gorondona asociados",
       technologies: ["JavaScript", "HTML", "CSS", "Git"],
-      imageRoute: "https://franborgiani.com/projects-images/correa-gorondona-project.png",
+      imageRoute: "/correagorondona.png",
       live: "https://correagorondona.com/",
       github: false,
       description: ""
     },
     {
       title: "Rick and Morty Darkmode",
-      imageRoute: "https://franborgiani.com/projects-images/dark-mode-rick-and-morty.png",
+      imageRoute: "/rickandmorty.png",
       github: "https://github.com/francoborgiani/react-rick-morty",
       live: "https://francoborgiani.github.io/react-rick-morty/",
       technologies: ["React", "SASS", "JavaScript", "Git"],
@@ -28,25 +28,16 @@ const About = () => {
     {
       title: "Tic Tac Toe App",
       github: "https://github.com/francoborgiani/tic-tac-toe-vite-react",
-      imageRoute: "https://franborgiani.com/projects-images/tic-tac-toe-react.png",
+      imageRoute: "/tictactoe.png",
       live: "https://francoborgiani.github.io/tic-tac-toe-vite-react/",
       technologies: ["React", "JavaScript", "Git", "Vite"],
-      description: ""
-    },
-    {
-      title: "100tifico Pagination App",
-      technologies: "React, SASS, JavaScript, Git",
-      imageRoute: "https://franborgiani.com/projects-images/100tifico-pagination-characters.png",
-      live: "https://francoborgiani.github.io/react-100tifico/",
-      technologies: ["React", "SASS", "JavaScript", "Git"],
-      github: "https://github.com/francoborgiani/react-100tifico",
       description: ""
     },
     {
       title: "Personal Portfolio",
       github: "https://github.com/francoborgiani/dark-portfolio-next",
       technologies: ["NextJS", "React", "TailwindCSS", "Git"],
-      imageRoute: "https://franborgiani.com/projects-images/next-portfolio.png",
+      imageRoute: "/personalportfolio.png",
       live: "https://franborgiani.com/",
       description: ""
     }
@@ -113,4 +104,4 @@ const About = () => {
     </div>
   );
 };
-export default About;
+export default Projects;
