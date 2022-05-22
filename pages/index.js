@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="w-full h-screen max-w-6xl mx-auto text-2xl text-center text-skyblue-100 md:px-8">
       <Head>
-        <meta name="description" content="I am Franco Borgiani Fullstack Developer and I love web technologies, as Javascript, React, Next and Express. Franco Borgiani..." />
+        <meta name="description" content="I am Franco Borgiani Fullstack Developer and I love web technologies, as Javascript, React, Next and Express. You can search me on Instagram and Facebook as Franco Borgiani" />
         <title>Home | Franco Borgiani Fullstack Developer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="index, follow" />

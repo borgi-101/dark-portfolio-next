@@ -50,7 +50,7 @@ const Projects = () => {
       <Head>
         <meta
           name="description"
-          content="I am Franco Borgiani Fullstack Developer. If you want see more projects, you can follow me on Github as Franco Borgiani..."
+          content="I am Franco Borgiani Fullstack Developer. If you want see more projects, you can follow me on my Github: Franco Borgiani"
         />
         <title>Projects | Franco Borgiani Fullstack Developer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -104,4 +104,12 @@ const Projects = () => {
     </div>
   );
 };
+
+const getStaticProps = () => {
+  return {
+    props: {
+      
+    }
+  }
+}
 export default Projects;

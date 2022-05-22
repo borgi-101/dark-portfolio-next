@@ -20,11 +20,11 @@ const Header = () => {
         fixed top-0 left-0 right-0 bg-opacity-50 backdrop-blur-sm `
 			}`
 		}>
-			<div className={commonStyles + " max-w-6xl mx-auto"}>
+			<nav className={commonStyles + " max-w-6xl mx-auto"}>
 				<Link href="/">
 					<a>
-						<h1 className="px-6 text-3xl font-bold md:text-4xl">
-							<span className={darkmode ? "text-blue-300" : "text-purple-600"}>Borgi</span>Fran</h1>
+						<h2 className="px-6 text-3xl font-bold md:text-4xl">
+							<span className={darkmode ? "text-blue-300" : "text-purple-600"}>Franco</span>Borgiani</h2>
 					</a>
 				</Link>
 				<div className="flex">
@@ -50,7 +50,7 @@ const Header = () => {
 						<span className={`${spanStyles} ${+ toggle ? "-rotate-45" : ""}`}></span>
 					</button>
 				</div>
-			</div>
+			</nav>
 		</header>
 	)
 }

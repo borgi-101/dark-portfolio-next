@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import {AiFillGithub , AiOutlineSelect} from "react-icons/ai";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import Image from "next/image";
-import imagen from '../public/correagorondona.png'
 
 const ProjectCard = ({title, imageRoute, technologies, darkmode, github, live, projectDescription}) =>{
   useEffect(()=>{

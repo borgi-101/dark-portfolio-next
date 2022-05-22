@@ -13,7 +13,7 @@ const About = () => {
       <Head>
         <meta
           name="description"
-          content="I am Franco Borgiani Fullstack Developer. If you want know more about me you can follow me in linkedin and instagram as Franco Borgiani"
+          content="I am Franco Borgiani. I'm Fullstack Developer, I love Javascript, React, and more web technologies"
         />
         <title>About | Franco Borgiani Fullstack Developer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -62,4 +62,13 @@ const About = () => {
     </div>
   );
 };
+
+const getStaticProps = () => {
+  return {
+    props: {
+
+    }
+  }
+}
+
 export default About;
