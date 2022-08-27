@@ -100,6 +100,7 @@ export default function () {
                 Name
               </label>
               <input
+                required
                 value={formData.name}
                 onChange={onChangeFormData}
                 className="  bg-blue-100   text-left h-12 rounded-2xl"
@@ -118,6 +119,7 @@ export default function () {
                 Subject
               </label>
               <input
+                required
                 value={formData.subject}
                 onChange={onChangeFormData}
                 className="  bg-blue-100   text-left h-12 rounded-2xl"
@@ -137,10 +139,11 @@ export default function () {
               Email
             </label>
             <input
+              required
               onChange={onChangeFormData}
               className="  bg-blue-100  text-left h-12 rounded-2xl"
               value={formData.email}
-              type="text"
+              type="email"
               name="email"
               id="email"
             />
@@ -152,6 +155,7 @@ export default function () {
             Tell me about your problem
           </label>
           <textarea
+            required
             value={formData.message}
             className="  bg-blue-100   text-left h-28 rounded-2xl px-2 py-1 mb-4"
             onChange={onChangeFormData}
