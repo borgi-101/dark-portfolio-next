@@ -6,6 +6,7 @@ import Section from "../../components/Section";
 import Footer from "../../components/Footer";
 import ProjectCard from "../../components/ProjectCard";
 import ProjectCardContainer from "../../components/ProjectCardContainer";
+import Button from "../../components/Button";
 
 const Projects = () => {
   const projectsInfo = [
@@ -15,7 +16,7 @@ const Projects = () => {
       imageRoute: "/correagorondona.png",
       live: "https://correagorondona.com/",
       github: false,
-      description: ""
+      description: "",
     },
     {
       title: "Rick and Morty Darkmode",
@@ -23,7 +24,7 @@ const Projects = () => {
       github: "https://github.com/francoborgiani/react-rick-morty",
       live: "https://francoborgiani.github.io/react-rick-morty/",
       technologies: ["React", "SASS", "JavaScript", "Git"],
-      description: ""
+      description: "",
     },
     {
       title: "Tic Tac Toe App",
@@ -31,7 +32,7 @@ const Projects = () => {
       imageRoute: "/tictactoe.png",
       live: "https://francoborgiani.github.io/tic-tac-toe-vite-react/",
       technologies: ["React", "JavaScript", "Git", "Vite"],
-      description: ""
+      description: "",
     },
     {
       title: "Personal Portfolio",
@@ -39,8 +40,8 @@ const Projects = () => {
       technologies: ["NextJS", "React", "TailwindCSS", "Git"],
       imageRoute: "/personalportfolio.png",
       live: "https://franborgiani.com/",
-      description: ""
-    }
+      description: "",
+    },
   ];
 
   const { darkmode } = useContext(ThemeContext);
@@ -99,6 +100,12 @@ const Projects = () => {
             ))}
           </ProjectCardContainer>
         </div>
+        <Button
+          darkmode={darkmode}
+          withoutMarginTop
+          route={"/contact"}
+          content={"Let's get in touch"}
+        />
       </section>
       <Footer darkmode={darkmode} />
     </div>
@@ -107,9 +114,7 @@ const Projects = () => {
 
 const getStaticProps = () => {
   return {
-    props: {
-      
-    }
-  }
-}
+    props: {},
+  };
+};
 export default Projects;

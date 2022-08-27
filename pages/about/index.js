@@ -5,6 +5,7 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 import SocialMediaNavbar from "../../components/SocialMediaNavbar";
 import Section from "../../components/Section";
 import Footer from "../../components/Footer";
+import Button from "../../components/Button";
 
 const About = () => {
   const { darkmode } = useContext(ThemeContext);
@@ -57,6 +58,7 @@ const About = () => {
           If you want to know more about my work, you can follow me on...
         </h1>
         <SocialMediaNavbar darkmode={darkmode} />
+        <Button content={"Let's see my projects"} route={"/projects"} darkmode={darkmode}/>
       </Section>
       <Footer darkmode={darkmode} />
     </div>

@@ -8,7 +8,7 @@ const Section = ({children}) =>{
   }, []);
   
   return(
-    <section className="grid h-screen max-w-6xl px-6 mx-auto place-content-center ">
+    <section className="grid h-screen px-6 mx-auto place-content-center">
         <div data-aos="fade-up" style={{width:"100%"}}>
           {children} 
         </div>

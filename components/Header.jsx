@@ -28,6 +28,7 @@ const Header = () => {
 					</a>
 				</Link>
 				<div className="flex">
+					<MenuResponsive toggle={toggle} setToggle={setToggle} />
 					<button
 						onClick={() => setDarkmode(!darkmode)}
 						className={`duration-500 p-3 md:mx-5 rounded-2xl 
@@ -35,12 +36,11 @@ const Header = () => {
 								? "bg-yellow-300"
 								: "bg-purple-600"}`}
 					>
-						{darkmode ?
-							<MdOutlineWbSunny className="text-gray-800 w-7 h-7" />
+						{darkmode 
+							? <MdOutlineWbSunny className="text-gray-800 w-7 h-7" />
 							: <MdNightlightRound className="text-white w-7 h-7" />
 						}
 					</button>
-					<MenuResponsive toggle={toggle} setToggle={setToggle} />
 					<button
 						onClick={() => setToggle(!toggle)}
 						className="flex flex-col justify-between w-10 h-8 m-3 md:hidden"
