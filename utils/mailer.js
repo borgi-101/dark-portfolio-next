@@ -23,7 +23,7 @@ export const mailer = async ({ name, email, subject, message }, res) => {
 
   transporter.sendMail(mailOptions, (error) => {
     if (error) {
-      res.status(500).send("Internal server error");
+      res.status(400).send("Problem sending email");
     } else {
       res.send("Successfully sent");
     }
