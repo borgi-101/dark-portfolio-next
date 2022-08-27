@@ -11,8 +11,6 @@ export const mailer = async ({ name, email, subject, message }, res) => {
     },
   });
 
-  transporter.verify().then(res => console.log("Ready for send email"))
-  console.log(process.env.AUTH_PASSWORD)
   const mailOptions = {
     from: process.env.AUTH_EMAIL,
     to: "franborgiani2003@gmail.com",
@@ -25,10 +23,8 @@ export const mailer = async ({ name, email, subject, message }, res) => {
 
   transporter.sendMail(mailOptions, (error) => {
     if (error) {
-      console.log("error", error);
       res.status(500).send("Internal server error");
     } else {
-      console.log("Successfully");
       res.send("Successfully sent");
     }
   });
