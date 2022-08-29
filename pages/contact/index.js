@@ -89,8 +89,8 @@ export default function () {
          duration-500 m-0 px-6 h-screen flex place-content-center  items-center justify-center`}
       >
         <form id="contactForm" className="flex flex-col" onSubmit={onSubmit}>
-          <div className="flex justify-between gap-6">
-            <div className="flex-col flex w-1/2">
+          <div className="flex justify-between gap-6 md:flex-row flex-col">
+            <div className="flex-col flex md:w-1/2">
               <label
                 htmlFor="name"
                 className={`text-left ${
@@ -109,7 +109,7 @@ export default function () {
                 name="name"
               />
             </div>
-            <div className="flex-col flex w-1/2">
+            <div className="flex-col flex md:w-1/2">
               <label
                 htmlFor="subject"
                 className={`text-left ${
