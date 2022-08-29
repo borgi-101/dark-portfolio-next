@@ -45,9 +45,9 @@ const Header = () => {
 						onClick={() => setToggle(!toggle)}
 						className="flex flex-col justify-between w-10 h-8 m-3 md:hidden"
 					>
-						<span className={`${spanStyles} ${toggle ? "rotate-45" : ""}`}></span>
+						<span className={`${spanStyles} ${toggle ? "rotate-45 bg-white" : ""}`}></span>
 						<span className={`${spanStyles} ${+ toggle ? "opacity-0" : "opacity-100"}`}></span>
-						<span className={`${spanStyles} ${+ toggle ? "-rotate-45" : ""}`}></span>
+						<span className={`${spanStyles} ${+ toggle ? "-rotate-45 bg-white" : ""}`}></span>
 					</button>
 				</div>
 			</nav>
