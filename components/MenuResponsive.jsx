@@ -5,7 +5,7 @@ import ThemeContext from "../context/ThemeContext";
 const MenuResponsive = ({ toggle, setToggle }) => {
   const { darkmode } = useContext(ThemeContext);
   const responsiveStyles = `font-semibold text-2xl fixed top-0 left-0 right-0 flex 
-    flex-col items-center justify-around h-screen text-white md:relative md:flex-row md:h-auto md:bg-transparent ${
+    flex-col items-center justify-around h-screen text-white md:relative md:flex-row bg-opacity-90 md:h-auto md:bg-transparent ${
       darkmode ? "md:text-white bg-gray-800" : "bg-gray-800 md:text-gray-800"
     } duration-500`;
 
