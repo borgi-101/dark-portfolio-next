@@ -61,9 +61,9 @@ export default function () {
       <Head>
         <meta
           name="description"
-          content="I am Franco Borgiani Fullstack Developer and I love web technologies, as Javascript, React, Next and Express. You can search me on Instagram and Facebook as Franco Borgiani"
+          content="I am Franco Borgiani a Data Engineer and I love web technologies and data platforms."
         />
-        <title>Home | Franco Borgiani Fullstack Developer</title>
+        <title>Home | Franco Borgiani Data Engineer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="index, follow" />
         <link

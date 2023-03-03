@@ -14,9 +14,9 @@ const About = () => {
       <Head>
         <meta
           name="description"
-          content="I am Franco Borgiani. I'm Fullstack Developer, I love Javascript, React, and more web technologies"
+          content="I am Franco Borgiani. I'm Data Engineer, I love Software Development and coding best practices"
         />
-        <title>About | Franco Borgiani Fullstack Developer</title>
+        <title>About | Franco Borgiani Data Engineer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="index, follow" />
         <link
@@ -34,7 +34,7 @@ const About = () => {
                 darkmode ? "text-white" : "text-black"
               }`}
             >
-              I'm a Bachelor's Degree in IT student, Data Engineer, and an ex Fullstack Developer. I love coding and making scalable software.
+              I'm studying for get my Bachelor's Degree in IT, I'm a Data Engineer, and an ex Fullstack Developer. I love coding and making scalable software.
             </h1>
           </a>
           <a
