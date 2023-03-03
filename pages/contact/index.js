@@ -79,9 +79,9 @@ export default function () {
             darkmode ? "text-white" : "text-black"
           }`}
         >
-          Hi, if you're here, it's because you think that we can work together.
+          I'll be happy to answer your doubts or just talk about Software Engineering.
         </h1>
-        <Button darkmode={darkmode} route="#contactForm" content="Let's talk" />
+        <Button darkmode={darkmode} route="#contactForm" content="Get in touch" />
       </Section>
       <section
         className={`

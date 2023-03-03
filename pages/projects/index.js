@@ -74,7 +74,7 @@ const Projects = () => {
                 darkmode ? "text-white" : "text-black"
               }`}
             >
-              Watch my personal projects
+              See my personal projects
             </h1>
             <AiOutlineArrowDown className="w-10 h-10 m-auto mt-2 text-center" />
           </a>
@@ -104,7 +104,7 @@ const Projects = () => {
           darkmode={darkmode}
           withoutMarginTop
           route={"/contact"}
-          content={"Let's get in touch"}
+          content={"Get in touch"}
         />
       </section>
       <Footer darkmode={darkmode} />

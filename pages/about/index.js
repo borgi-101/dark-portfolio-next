@@ -34,9 +34,7 @@ const About = () => {
                 darkmode ? "text-white" : "text-black"
               }`}
             >
-              I'm 18, I'm a tech student, and lover at linux and macOS, In my
-              free time I drink coffee, and read about tech. I love run, and I
-              try do it every day.
+              I'm a Bachelor's Degree in IT student, Data Engineer, and an ex Fullstack Developer. I love coding and making scalable software.
             </h1>
           </a>
           <a
@@ -55,10 +53,10 @@ const About = () => {
             darkmode ? "text-white" : "text-black"
           }`}
         >
-          If you want to know more about my work, you can follow me on...
+          If you want to know more about myself you can follow me on...
         </h1>
         <SocialMediaNavbar darkmode={darkmode} />
-        <Button content={"Let's see my projects"} route={"/projects"} darkmode={darkmode}/>
+        <Button content={"See my projects"} route={"/projects"} darkmode={darkmode}/>
       </Section>
       <Footer darkmode={darkmode} />
     </div>
