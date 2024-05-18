@@ -31,7 +31,7 @@ export default function Home() {
             darkmode ? "text-white" : "text-black"
           }`}
         >
-          Hello there, Franco Borgiani here, a Data Engineer located in Uruguay and a passionate of Software Engineering and coding best practices. 
+          Hello there, Franco Borgiani here, a Data Engineer located in Uruguay and a passionate of Software Engineering, Architecture and coding best practices. 
         </h1>
         <Button darkmode={darkmode} route="/about" content="About me" />
       </Section>
