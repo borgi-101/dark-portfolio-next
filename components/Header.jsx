@@ -31,6 +31,8 @@ const Header = () => {
 					<MenuResponsive toggle={toggle} setToggle={setToggle} />
 					<button
 						onClick={() => setDarkmode(!darkmode)}
+						aria-hidden={true}
+						tabIndex={"-1"}
 						className={`duration-500 p-3 md:mx-5 rounded-2xl 
                     ${darkmode
 								? "bg-yellow-300"
@@ -42,6 +44,8 @@ const Header = () => {
 						}
 					</button>
 					<button
+						aria-hidden={true}
+						tabIndex={"-1"}
 						onClick={() => setToggle(!toggle)}
 						className="flex flex-col justify-between w-10 h-8 m-3 md:hidden"
 					>
